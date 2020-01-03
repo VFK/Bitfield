@@ -1,6 +1,7 @@
 # Bitfield
 
 A simple bitfield implementation written in Swift for use with Package Manager.
+
 Compatible with BitTorrent specifucation:
 > <...> a bitfield representing the pieces that have been successfully downloaded. The high bit in the first byte corresponds to piece index 0. Bits that are cleared indicated a missing piece, and set bits indicate a valid and available piece. Spare bits at the end are set to zero.
 
@@ -11,8 +12,8 @@ import Bitfield
 
 let bitfield = Bitfield(size: 10)
 
-bitfield.set(atIndex: Int) // Sets a byte at specified index to 1
-bitfield.unset(atIndex: Int) // Sets a byte at specified index to 0
+bitfield.set(atIndex: Int) // Sets bit at specified index to 1
+bitfield.unset(atIndex: Int) // Sets bit at specified index to 0
 bitfield.isSet(atIndex: Int) -> Bool
 ```
 
